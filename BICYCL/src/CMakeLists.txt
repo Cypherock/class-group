@@ -12,10 +12,8 @@ set (BICYCL_INSTALLABLE_HEADERS_AND_INL
                       )
 add_library (bicycl INTERFACE)
 
-include_directories(/usr/local/include/miracl/)
-include_directories(/usr/local/include/)
-include_directories(/usr/local/lib/)
-link_directories(/usr/local/lib/)
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/../miracl/)
+link_directories(${CMAKE_CURRENT_SOURCE_DIR}/../miracl/)
 
 target_sources (bicycl INTERFACE ${BICYCL_MAIN_HEADER}
                                     ${BICYCL_INSTALLABLE_HEADERS_AND_INL})

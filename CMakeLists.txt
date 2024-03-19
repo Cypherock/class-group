@@ -56,10 +56,9 @@ find_package (gmp REQUIRED)
 # Include directories for header files and libs
 ################################################################################
 include_directories(include)
-include_directories(/usr/local/include/)
-include_directories(/usr/local/include/miracl/)
-include_directories(/usr/local/lib/)
-link_directories(/usr/local/lib/)
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/BICYCL/include/)
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/BICYCL/miracl/)
+link_directories(${CMAKE_CURRENT_SOURCE_DIR}/BICYCL/miracl/)
 
 ################################################################################
 # Add source files

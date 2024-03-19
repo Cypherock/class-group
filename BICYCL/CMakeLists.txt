@@ -101,6 +101,5 @@ endif()
 find_package (gmp REQUIRED)
 find_package (OpenSSL REQUIRED)
 
-include_directories(/usr/local/include/miracl/)
-include_directories(/usr/local/lib/)
-link_directories(/usr/local/lib/)
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/miracl/)
+link_directories(${CMAKE_CURRENT_SOURCE_DIR}/miracl/)
